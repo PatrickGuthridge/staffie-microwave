@@ -44,9 +44,13 @@
             const staffieMicrowaveText = "The Staffie Microwave™";
             function whatVowel (char) {
                 var vowels = new Array (false, "a", "e", "i", "o", "u");
+                var vowelsU = new Array (false, "A", "E", "I", "O", "U");
                 var vowel = false;
                 for (i in vowels) {
                     if (vowels[i] == char) {
+                      vowel = i;
+                    }
+                    if (vowelsU[i] == char) {
                       vowel = i;
                     }
                 }
